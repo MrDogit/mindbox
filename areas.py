@@ -19,9 +19,10 @@ def circle(radius:int)->int:
 
 def triangle(side_1:int, side_2:int, side_3:int) -> int:
     perimeter = side_1 + side_2 + side_3
+    semiperimeter = perimeter / 2
     area = side_1 + side_2 + side_3
-    area = sqrt(perimeter
-                * (perimeter - side_1)
-                * (perimeter - side_2)
-                * (perimeter - side_3))
+    area = sqrt(semiperimeter
+                * (semiperimeter - side_1)
+                * (semiperimeter - side_2)
+                * (semiperimeter - side_3))
     return area
