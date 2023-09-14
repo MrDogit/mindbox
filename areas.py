@@ -17,13 +17,13 @@ Requiers python 3.10+
 """
 from math import pi, sqrt
 
-def circle(radius: int | float)->int:
+def circle(radius: int | float) -> float:
     return radius ** 2 * pi
-# (data: Union[int, float])
-def triangle(side_1: int | float, side_2: int | float, side_3: int | float) -> float:
+
+def triangle(side_1: int | float, side_2: int | float, side_3: int | float) -> float:    
     perimeter = side_1 + side_2 + side_3
     semiperimeter = perimeter / 2
-    area = side_1 + side_2 + side_3
+    
     area = sqrt(semiperimeter
                 * (semiperimeter - side_1)
                 * (semiperimeter - side_2)
