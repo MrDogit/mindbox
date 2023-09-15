@@ -13,7 +13,7 @@ class Triangle():
         self.side_1 = side_1
         self.side_2 = side_2
         self.side_3 = side_3
-
+        
         self.perimeter = self.side_1 + self.side_2 + self.side_3
         semiperimeter = self.perimeter / 2
         self.area = sqrt(semiperimeter
