@@ -1,4 +1,4 @@
-"""This module is unittest for areas module"""
+"""This module is unittest for areas module."""
 import unittest
 import areas
 
