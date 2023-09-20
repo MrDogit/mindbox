@@ -3,10 +3,11 @@ import areas
 import inspect
 import os
 
-classes = [name for name, obj in inspect.getmembers(areas, inspect.isclass)]
-
 def clear_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
+
+classes = [name for name, obj in inspect.getmembers(areas, inspect.isclass)]
+
 
 while True:
     print('This script calculates parameters only for this list of shapes:')
